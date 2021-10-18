@@ -1,0 +1,35 @@
+.main__header{
+    display: flex;
+    min-height: 10vh;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+   
+}
+
+.header{
+    background: black;
+}
+
+
+.header__link{
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.header__link:hover{
+    color: rgb(16, 221, 221);
+}
+
+.navbar__links{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar__main{
+    flex: 1;
+}
