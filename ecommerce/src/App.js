@@ -7,6 +7,7 @@ import Header from "./components/header/header";
 function App() {
   return (
     <div>
+      Dummy
 <Header/>
     <Switch>
 <Route exact path="/" component={Homepage}    />
