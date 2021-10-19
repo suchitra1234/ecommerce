@@ -15,7 +15,7 @@ const Product = () => {
     //<h1 onClick={()=>history.push("/push")} >cart</h1>
 
    React.useEffect(() => {
-       axios.get("http://localhost:3305/products").then((res)=>setstate(res.data))
+       axios.get("https://bc-omega.vercel.app/products").then((res)=>setstate(res.data))
        
    }, [])
 

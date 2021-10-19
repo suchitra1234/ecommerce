@@ -10,7 +10,7 @@ const Productdetails = () => {
 
 
 useEffect(() => {
-    axios.get(`http://localhost:3305/product/${params.id}`).then((res)=>setsingleItem(res.data[0]))
+    axios.get(`https://bc-omega.vercel.app/product/${params.id}`).then((res)=>setsingleItem(res.data[0]))
  
 }, [])
 
