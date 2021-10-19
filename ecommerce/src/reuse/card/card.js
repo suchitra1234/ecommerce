@@ -16,16 +16,18 @@ const CardComponent = ({res,state,setstate,handleDelete}) => {
         // local storage can save only strings
         // res->strings
         const d1 =window.localStorage.cartitems;
-        if(d1){
-            const data = JSON.parse(d1)
-            const prv = [...data,res]
-            const d = JSON.stringify(prv)
-            
-           
-            
-            window.localStorage.setItem("cartitems",d)
+        if(!d1){
+        return null;
 
         }
+
+        const data = JSON.parse(d1)
+        const prv = [...data,res]
+        const d = JSON.stringify(prv)
+        
+       
+        
+        window.localStorage.setItem("cartitems",d)
       
         
         
